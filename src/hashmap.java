@@ -1,8 +1,8 @@
 import java.util.HashMap;
 
 public class hashmap {
-    public static void main(String[] args)
-    {
+    
+    public void learnigHashMap(){    
         HashMap<String, Integer> hash = new HashMap<String, Integer>();
         hash.put("Hamza", 1);
         hash.put("Hamza", hash.get("Hamza")+1);

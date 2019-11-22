@@ -1,16 +1,19 @@
 import java.util.ArrayList;
 
 public class arraylist {
-    public static void main(String[] args)
+    int size = 1;
+    int [] arr = new int[size];
+    int index = 0;
+    
+    public void add(int x)
     {
-        ArrayList<String> arr = new ArrayList<String>();
-        arr.add("C");
-        arr.add("A");
-        arr.add("R");
-        for(String i: arr)
+        //check for size before doing add
+        if(index = 0)
         {
-            System.out.println(i);
+            arr[index] = x;
         }
-        System.out.println(arr);
+        else{
+            // do something
+        }
     }
 }

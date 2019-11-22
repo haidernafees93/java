@@ -1,8 +1,12 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 import java.util.ArrayList;
 
 public class palidrom_125 {
-    public static void main(String[] args)
-    {
+    
+     public boolean isSentencePalindrome(){   
         String s = "race a car";
         s = s.replaceAll("[^a-zA-Z0-9]", "");
         s = s.toLowerCase();
@@ -11,15 +15,15 @@ public class palidrom_125 {
         ArrayList<Character> original = new ArrayList<Character>();
         ArrayList<Character> palindrome = new ArrayList<Character>();
 
-        for(int i = s.length()-1; i >= 0; i--)
-        {
+        for(int i = s.length()-1; i >= 0; i--) {
             palindrome.add(s.charAt(i));
             original.add(s.charAt(count));
             count++;
         }
-
-        boolean result;
-        result = palindrome.equals(original);
-        System.out.println(result);
+        return true;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master
