@@ -157,6 +157,4 @@ public class linkedlist {
             h1 = h1.next;
         }
     }
-    //search a Node
-
 }
