@@ -1,4 +1,3 @@
-/*
 import java.util.ArrayList;
 
 public class palidrom_125 {
@@ -24,4 +23,3 @@ public class palidrom_125 {
         System.out.println(result);
     }
 }
-*/
