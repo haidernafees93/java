@@ -3,11 +3,12 @@ public class test {
         int data;
         Node next;
 
-        Node(int data){
-            this.data = data;
+        Node(int x){
+            this.data = x;
             this.next = null;
         }
     }
+
     private Node head;
 
     public void add(int x){
