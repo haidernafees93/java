@@ -1,19 +1,22 @@
 public class runner {
     public static void main (String [] args)
     {
-        test listA = new test();
-        test listB = new test();
-        //test listC = new test();
+        removeDups listA = new removeDups();
 
         listA.add(3);
-        listA.add(8);
+        listA.add(4);
+        listA.add(4);
+        listA.add(4);
+        listA.add(7);
         listA.add(3);
-        
-        listB.add(5);
-        listB.add(3);
-        listB.add(5);
-
+        listA.add(5);
+        listA.add(3);
+        listA.add(5);
+        listA.add(10);
+        listA.add(10);
+        listA.add(10);
         listA.print();
-        listB.print();
+        listA.comparison();
+        listA.print();
     }
 }
