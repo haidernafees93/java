@@ -34,11 +34,7 @@ public class removeDups{
         System.out.println(h1.data);
     }
 
-    public void delete(Node pre){
-        pre.next = pre.next.next;
-    }
-
-    public void comparison(){
+    public void delete(){
         Node h1 = head;
         Node pre = h1;
         Node r = pre.next;
