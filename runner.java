@@ -1,18 +1,27 @@
 public class runner {
     public static void main (String [] args)
     {
-        linkedlist listA = new linkedlist();
+        stack listA = new stack();
 
-        listA.add(3);
-        listA.add(5);
-        listA.add(8);
-        listA.add(5);
-        listA.add(10);
-        listA.add(2);
-        listA.add(1);
-        listA.add(4);
+        System.out.println("Pushing started!");
+        listA.push(3);
+        listA.push(4);
+        listA.push(5);
+        listA.push(6);
         listA.print();
+
+        System.out.println("Peeking started!");
+        System.out.println(listA.peek());
+        listA.print();
+
+        System.out.println("Poping started!");
+        listA.pop();
+        listA.print();
+        listA.pop();
+        listA.print();
+        listA.pop();
+        listA.print();
+        listA.pop();
         System.out.println();
-        listA.partition(10);
     }
 }
