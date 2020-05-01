@@ -1,18 +1,24 @@
 public class runner {
     public static void main (String [] args)
     {
-        linkedlist listA = new linkedlist();
+        linkedList listA = new linkedList();
+        linkedList listB = new linkedList();
+        linkedList listC = new linkedList();
+        
 
-        listA.add(3);
-        listA.add(5);
-        listA.add(8);
-        listA.add(5);
-        listA.add(10);
-        listA.add(2);
+        listA.add(6);
         listA.add(1);
-        listA.add(4);
-        listA.print();
-        System.out.println();
-        listA.partition(10);
+        listA.add(7);
+
+        //listA.reverse(listA);
+
+        listB.add(2);
+        listB.add(9);
+        listB.add(5);
+
+        //listB.reverse(listB);
+
+        //listA.print();
+        listC.forwardAddition(listA, listB);
     }
 }

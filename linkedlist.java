@@ -125,9 +125,9 @@ public class linkedlist {
 
     public void partition(int x) {
         Node beforeStart = null;
-        Node beforeEnd   = null;
-        Node afterStart  = null;
-        Node afterEnd    = null;
+        Node beforeEnd = null;
+        Node afterStart = null;
+        Node afterEnd = null;
         Node temp = null;
         Node h1 = head;
 
@@ -153,7 +153,7 @@ public class linkedlist {
             h1 = h1.next;
         }
         temp = new Node(h1.data);
-        
+
         if (h1.data < x) {
             if (beforeStart == null) {
                 beforeStart = temp;
