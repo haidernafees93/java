@@ -1,0 +1,70 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-contains_duplicate<java_a8f8843e>",
+            "request": "launch",
+            "mainClass": "contains_duplicate",
+            "projectName": "java_a8f8843e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-isSubString<java_a8f8843e>",
+            "request": "launch",
+            "mainClass": "isSubString",
+            "projectName": "java_a8f8843e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-permutation<java_a8f8843e>",
+            "request": "launch",
+            "mainClass": "permutation",
+            "projectName": "java_a8f8843e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-romanToIntegar<java_a8f8843e>",
+            "request": "launch",
+            "mainClass": "romanToIntegar",
+            "projectName": "java_a8f8843e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-runner<java_a8f8843e>",
+            "request": "launch",
+            "mainClass": "runner",
+            "projectName": "java_a8f8843e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-stringCompression<java_a8f8843e>",
+            "request": "launch",
+            "mainClass": "stringCompression",
+            "projectName": "java_a8f8843e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-threeinone<java_a8f8843e>",
+            "request": "launch",
+            "mainClass": "threeinone",
+            "projectName": "java_a8f8843e"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-unique_number_of_occurrences<java_a8f8843e>",
+            "request": "launch",
+            "mainClass": "unique_number_of_occurrences",
+            "projectName": "java_a8f8843e"
+        }
+    ]
+}
