@@ -1,8 +1,15 @@
 public class runner {
     public static void main (String [] args)
     {
-        threeInOne listA = new threeInOne();
-        int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-        listA.split(arr);
+        queueViaStack listA = new queueViaStack();
+        listA.push(5);
+        listA.push(1);
+        listA.push(2);
+        listA.push(3);
+        listA.push(4);
+        listA.push(5);
+        listA.push(6);
+        listA.print();
+        listA.MyQueue();
     }
 }
