@@ -1,27 +1,35 @@
 public class runner {
     public static void main (String [] args)
     {
-        stack listA = new stack();
+        // trees bitree = new trees();
+        // bitree.root(1);
+        // bitree.addleft(2);
+        // bitree.addright(3);
+        // System.out.println("Root is: " + bitree.root.data);
+        // System.out.println("Left is: " + bitree.root.left.data);
+        // System.out.println("Root is: " + bitree.root.right.data);
 
-        System.out.println("Pushing started!");
-        listA.push(3);
-        listA.push(4);
-        listA.push(5);
-        listA.push(6);
-        listA.print();
+        // bitree.visitleft();
+        // //bitree.root(1);
+        // bitree.addleft(4);
+        // bitree.addright(5);
+        // System.out.println("Root is: " + bitree.visitNode.data);
+        // System.out.println("Left is: " + bitree.visitNode.left.data);
+        // System.out.println("Root is: " + bitree.visitNode.right.data);
 
-        System.out.println("Peeking started!");
-        System.out.println(listA.peek());
-        listA.print();
+        // bitree.visitright();
+        // //bitree.root(1);
+        // bitree.addleft(6);
+        // bitree.addright(7);
+        // System.out.println("Root is: " + bitree.visitNode.data);
+        // System.out.println("Left is: " + bitree.visitNode.left.data);
+        // System.out.println("Root is: " + bitree.visitNode.right.data);
 
-        System.out.println("Poping started!");
-        listA.pop();
-        listA.print();
-        listA.pop();
-        listA.print();
-        listA.pop();
-        listA.print();
-        listA.pop();
-        System.out.println();
+       
+
+        float num = (float) (0-2147483412);
+        System.out.println("The result is: " + num);
+        int y = num.intValue();
+
     }
 }
