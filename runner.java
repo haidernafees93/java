@@ -1,19 +1,18 @@
 public class runner {
     public static void main (String [] args)
     {
-        test listA = new test();
-        test listB = new test();
-        //test listC = new test();
-
-        listA.add(3);
-        listA.add(8);
-        listA.add(3);
+        bfs listA = new bfs();
         
-        listB.add(5);
-        listB.add(3);
-        listB.add(5);
-
-        listA.print();
-        listB.print();
+        listA.push(1);
+        listA.push(2);
+        listA.push(3);
+        listA.moveLeft();
+        listA.push(4);
+        listA.push(5);
+        listA.moveReturn();
+        listA.moveRight();
+        listA.push(6);
+        listA.push(7);
+        listA.BreadFirstSearch();
     }
 }
