@@ -1,13 +1,11 @@
 import java.util.HashSet;
 
 public class linkedlist {
-    class Node
-    {
+    class Node {
         int data;
         Node next;
 
-        Node(int data)
-        {
+        Node(int data) {
             this.data = data;
             this.next = null;
         }
@@ -16,67 +14,55 @@ public class linkedlist {
     private Node head;
     private int count = 0;
 
-    //insert a Node
-    public void add(int x)
-    {
+    // insert a Node
+    public void add(int x) {
         Node temp = new Node(x);
-        if(head == null)
-        {
+        if (head == null) {
             head = temp;
             count++;
-        }
-        else
-        {
+        } else {
             Node hCopy = head;
-            while(hCopy.next != null)
-            {
+            while (hCopy.next != null) {
                 hCopy = hCopy.next;
             }
             hCopy.next = temp;
             count++;
         }
     }
-    //return the length of the linked list
-    public int length()
-    {
+
+    // return the length of the linked list
+    public int length() {
         System.out.println(count);
         return count;
     }
 
-    //print the linked list
-    public void print()
-    {
+    // print the linked list
+    public void print() {
         Node hCopy = head;
-      while(hCopy.next != null)
-      {
-          System.out.print(hCopy.data + " -> ");
-          hCopy=hCopy.next;
-      }
+        while (hCopy.next != null) {
+            System.out.print(hCopy.data + " -> ");
+            hCopy = hCopy.next;
+        }
         System.out.println(hCopy.data);
     }
 
-    //delete a Node
-    public void delete(int position)
-    {
+    // delete a Node
+    public void delete(int position) {
         Node hCopy = head;
-        
-        for(int i = 0; i < position; i++)
-        {
+
+        for (int i = 0; i < position; i++) {
             hCopy = hCopy.next;
         }
         hCopy.next = hCopy.next.next;
     }
 
-    //loop detection
-    public Boolean loopDetection()
-    {
+    // loop detection
+    public Boolean loopDetection() {
         Node h = head;
         Node runner = head.next;
 
-        while(runner.next != null)
-        {
-            if(runner == h)
-            {
+        while (runner.next != null) {
+            if (runner == h) {
                 return true;
             }
             runner = runner.next.next;
@@ -85,58 +71,49 @@ public class linkedlist {
         return false;
     }
 
-    //reverse the linked list
-    public void createCircle()
-    {
+    // reverse the linked list
+    public void createCircle() {
         Node h = head;
-        h=h.next;
-        h=h.next;
+        h = h.next;
+        h = h.next;
         Node temp = h;
-        temp =temp.next.next;
+        temp = temp.next.next;
         temp.next = h;
     }
 
-    //remove duplicates from the list
-    public void redup()
-    {
+    // remove duplicates from the list
+    public void redup() {
         HashSet<Integer> set = new HashSet<>();
         Node h = head;
         Node runner = h.next;
         set.add(h.data);
 
-        while(runner.next != null)
-        {
+        while (runner.next != null) {
             boolean increment = true;
-            if(!set.contains(runner.data))
-            {
+            if (!set.contains(runner.data)) {
                 set.add(runner.data);
-            }
-            else
-            {
+            } else {
                 h.next = runner.next;
                 increment = false;
             }
-            if(increment)
+            if (increment)
                 h = h.next;
             runner = runner.next;
         }
-        if(set.contains(runner.data))
-        {
+        if (set.contains(runner.data)) {
             h.next = null;
         }
     }
-    
+
     // addition of linked_list
 
-    public void addition(linkedlist a, linkedlist b)
-    {
+    public void addition(linkedlist a, linkedlist b) {
         Node h = a.head;
         Node h1 = b.head;
         Node temp = new Node(0);
         int quotient = 0;
 
-        while(h != null)
-        {
+        while (h != null) {
             temp.data = h.data + h1.data + quotient;
             quotient = temp.data / 10;
             temp.data = temp.data % 10;
@@ -146,4 +123,62 @@ public class linkedlist {
         }
     }
 
+    public void partition(int x) {
+        Node beforeStart = null;
+        Node beforeEnd   = null;
+        Node afterStart  = null;
+        Node afterEnd    = null;
+        Node temp = null;
+        Node h1 = head;
+
+        while (h1.next != null) {
+            temp = new Node(h1.data);
+            if (h1.data < x) {
+                if (beforeStart == null) {
+                    beforeStart = temp;
+                    beforeEnd = beforeStart;
+                } else {
+                    beforeEnd.next = temp;
+                    beforeEnd = beforeEnd.next;
+                }
+            } else {
+                if (afterStart == null) {
+                    afterStart = temp;
+                    afterEnd = afterStart;
+                } else {
+                    afterEnd.next = temp;
+                    afterEnd = afterEnd.next;
+                }
+            }
+            h1 = h1.next;
+        }
+        temp = new Node(h1.data);
+        
+        if (h1.data < x) {
+            if (beforeStart == null) {
+                beforeStart = temp;
+                beforeEnd = beforeStart;
+            } else {
+                beforeEnd.next = temp;
+                beforeEnd = beforeEnd.next;
+            }
+        } else {
+            if (afterStart == null) {
+                afterStart = temp;
+                afterEnd = afterStart;
+            } else {
+                afterEnd.next = temp;
+                afterEnd = afterEnd.next;
+            }
+        }
+
+        beforeEnd.next = afterStart;
+
+        Node h2 = beforeStart;
+        while (h2.next != null) {
+            System.out.print(h2.data + " -> ");
+            h2 = h2.next;
+        }
+        System.out.println(h2.data);
+    }
 }
