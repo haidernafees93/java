@@ -1,27 +1,36 @@
 public class runner {
     public static void main (String [] args)
     {
-        stack listA = new stack();
-
-        System.out.println("Pushing started!");
+        stacksOfPlates listA = new stacksOfPlates();
         listA.push(3);
-        listA.push(4);
-        listA.push(5);
         listA.push(6);
+        listA.push(7);
+        listA.push(0);
+        listA.push(3);
+        listA.push(2);
+        listA.push(5);
+        listA.push(10);
         listA.print();
 
-        System.out.println("Peeking started!");
-        System.out.println(listA.peek());
+        listA.pop();
         listA.print();
 
-        System.out.println("Poping started!");
         listA.pop();
         listA.print();
+
         listA.pop();
         listA.print();
+
         listA.pop();
         listA.print();
+
         listA.pop();
-        System.out.println();
+        listA.print();
+
+        listA.pop();
+        listA.print();
+
+        listA.pop();
+        listA.print();
     }
 }

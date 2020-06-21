@@ -11,16 +11,20 @@ public class stack {
     }
 
     private Node head;
+    private int capacity = 5;
+    private int size = 0;
 
     public void push(int x){
         Node temp = new Node(x);
         temp.next = head;
         head = temp;
+        size++;
     }
 
     public int pop(){
         int temp = head.data;
         head = head.next;
+        size--;
         return temp;
     }
 
@@ -30,6 +34,15 @@ public class stack {
 
     public boolean isEmpty(){
         if(head == null){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public boolean isFull(){
+        if(size == capacity){
             return true;
         }
         else{
