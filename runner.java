@@ -1,18 +1,15 @@
 public class runner {
-    public static void main (String [] args)
-    {
-        bfs listA = new bfs();
-        
-        listA.push(1);
-        listA.push(2);
-        listA.push(3);
-        listA.moveLeft();
-        listA.push(4);
-        listA.push(5);
-        listA.moveReturn();
-        listA.moveRight();
-        listA.push(6);
-        listA.push(7);
+    public static void main(String[] args) {
+        binarytree listA = new binarytree();
+
+        listA.insert(2);
+        listA.insert(1);
+        listA.insert(3);
+        listA.insert(8);
+        listA.insert(6);
+        listA.insert(5);
+        listA.insert(7);
         listA.BreadFirstSearch();
+        System.out.println();
     }
 }
