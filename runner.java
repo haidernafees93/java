@@ -1,36 +1,15 @@
 public class runner {
-    public static void main (String [] args)
-    {
-        stacksOfPlates listA = new stacksOfPlates();
-        listA.push(3);
-        listA.push(6);
-        listA.push(7);
-        listA.push(0);
-        listA.push(3);
-        listA.push(2);
-        listA.push(5);
-        listA.push(10);
-        listA.print();
+    public static void main(String[] args) {
+        binarytree listA = new binarytree();
 
-        listA.pop();
-        listA.print();
-
-        listA.pop();
-        listA.print();
-
-        listA.pop();
-        listA.print();
-
-        listA.pop();
-        listA.print();
-
-        listA.pop();
-        listA.print();
-
-        listA.pop();
-        listA.print();
-
-        listA.pop();
-        listA.print();
+        listA.insert(2);
+        listA.insert(1);
+        listA.insert(3);
+        listA.insert(8);
+        listA.insert(6);
+        listA.insert(5);
+        listA.insert(7);
+        listA.BreadFirstSearch();
+        System.out.println();
     }
 }
