@@ -85,10 +85,10 @@ class graph {
         addEdgedirect(adj, 5, 1);  
 
         // addEdge(adj, 0, 1); 
-        // addEdge(adj, 0, 2);  
+        // addEdge(adj, 0, 2); 
         // addEdge(adj, 2, 3); 
         // addEdge(adj, 2, 4); 
-        // addEdge(adj, 5, 1);  
+        // addEdge(adj, 5, 1); 
 
         bfsdirected(adj);
     }
